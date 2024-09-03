@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/home.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- for the menu responsivness -->
+    <link rel="stylesheet" href="css/small-menu.css">
+
+
+
+    <!-- For the main section -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link rel="stylesheet" href="css/about.min.css">
+
+
+</head>
+
+
+<body class="body">
+
+
+
+  <!-- Header  -->
+  <div class="container-fluid headerr custom-container2">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom bg-shadow">
+  
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="images/logo2.png" width="150" alt="Logo" aria-label="Bootstrap">
+        </a>
+      </div>
+      
+      <!-- Nav Icon for Mobile View -->
+      <div class="nav-icon d-md-none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-2 link-primary text-white">Home</a></li>
+        <li><a href="html/about.html" class="nav-link px-2 text-white link-primary">About</a></li>
+        <!-- <li><a href="html/team.html" class="nav-link px-2 text-white link-primary">Our team</a></li> -->
+        <li><a href="html/contact.html" class="nav-link px-2 text-white link-primary">Contact</a></li>
+      </ul>
+  
+      <div class="col-md-3 text-end small-menu">
+        <button type="button" class="btn btn-outline-primary text-white me-2" onclick="location.href='html/login.html'">Login</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='html/signup.html'">Signup</button>
+      </div>
+    </header>
+  </div>
+  
+  <!-- I didn't like it in case I did then it's ok -->
+
+  <!-- BreadCrumbs -->
+<!-- <div class="container-fluid custom-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom text-center bg-secondary custom-breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="text-decoration-none text-white fw-bold text-center" href="../home.html">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a class="fw-bold text-decoration-none text-white" href="about.html">About</a>
+      </li>
+    </ol>
+  </nav>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Hero SEction -->
+
+  
+  <div class="container px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="team/car1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+
+        <h1 class="display-5 fw-bold text-primary lh-1 mb-3">Save big with our car rental</h1>
+        <br>
+        <p class="link-secondary">Plan your trip now. Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
+        <br>
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="location.href='html/cars.html'">Check Cars</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='html/login.html'">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="custom-container2">
+
+  <!-- Reservation Section -->
+  <div class="container form mt-5 opa-clr">
+    <form action="">
+      <h1 class="fw-bold text-white mb-4">Book a Car</h1>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-car text-primary me-2"></i>Select Your Car Type</h5>
+          <select name="cars" id="cars" class="form-select">
+            <option value="suzuki">Suzuki</option>
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-calendar-alt text-primary me-2"></i>Drop off date</h5>
+          <input type="date" id="drop-off" name="drop-off" class="form-control">
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-calendar-alt text-primary me-2"></i>Pick up date</h5>
+          <input type="date" id="pick-up" name="pick-up" class="form-control">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>Pick up location</h5>
+          <select name="pick-up-location" id="pick-up-location" class="form-select">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="quetta">Quetta</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>Drop off location</h5>
+          <select name="drop-off-location" id="drop-off-location" class="form-select">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="quetta">Quetta</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+  
+
+  
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- Sliding Section -->
+  
+
+    <h1 class="fw-bold text-primary text-center">Explore Our Cars Collection</h1>
+    <p class="text-primary text-center">Immerse yourself with our new collection of cars. We always Seek impressing you!😉</p>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item active">
+        <img src="team/car1.jpg" class="bd-placeholder-img" width="50%" height="100%" alt="Ahmed" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="fw-bold opacity-75">Sign up!</h1>
+            <p class="opacity-75 fw-bold">Create Your Own account ASAP!</p>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="html/signup.html">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="team/car3.jpg" class="bd-placeholder-img" width="50%" height="100%" alt="Ahmed" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        </div>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fw-bold opacity-75">Check Our Team Members And Join!.</h1>
+            <p class="fw-bold opacity-75">Learn more about Us, and the Team Member. .</p>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="html/about.html">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="carousel-item">
+
+        <img src="team/car2.jpg" class="bd-placeholder-img float-end" width="50%" height="100%" alt="Ahmed" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+ 
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 class="fw-bold opacity-75">Explore our collection of cars.</h1>
+            <p class="fw-bold opacity-75">New cars are there for Renting and Purchasing.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><a class="btn btn-lg btn-primary" href="html/cars.html">Explore Cars</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+
+
+  <!-- plan your trep section -->
+
+  <div class="custom-container mb-6">
+  <div class="container text-center mt-5 mb-5">
+    <br>
+    <br>
+    <br>
+    <h4 class="text-center text-primary fw-bold">Plan Your Trip now</h4>
+    <h1 class="text-center fw-bold text-primary mb-5">Quick & easy car rental</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="row g-3"> <!-- g-3 class will add some gutter (space) between columns -->
+
+
+      <div class="col-12 col-md-4 opacity-75">
+        <div class="card h-100">
+          <img src="images/image copy 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="fw-bold text-primary">Select a Car</h1>
+            <p class="card-text text-secondary">We offer a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 opacity-75">
+        <div class="card h-100">
+          <img src="images/guy3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <br>
+            <h1 class="fw-bold text-primary">Contact Operator</h1>
+            <p class="card-text text-secondary">Our knowledgeable and friendly operators are always ready to help with any questions or concerns.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 opacity-75">
+        <div class="card h-100">
+          <img src="images/image copy 4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="fw-bold text-primary">Let's Drive</h1>
+            <p class="card-text text-secondary">Whether you're hitting the open road, we've got you covered with our wide range of cars</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+  <!-- Why Choose Us section I don't think there is a need for it!!!!!!!!!!!!!!!!!!!!!!!!-->
+<!-- 
+  <div class="container-fluid custom-container2 p-5">
+  <div class="container text-center mt-5">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text fw-bold text-primary">Why Choose us</p>
+        <h1 class="card-title fw-bold text-primary">Best valued deals you <br> will ever find</h1>
+      </div>
+      <img src="images/whychoseus.png" class="card-img-bottom" alt="...">
+      <br>
+      <br>
+      <p class="text-center text-primary fw-bold container-sm">Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
+
+    </div>
+
+  </div>
+
+</div>
+ -->
+
+
+
+
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <!-- FQS sectoin -->
+
+
+  <div class="custom-container p-5">
+  <div class="container faqs opa-clr">
+
+    <p class="text-center text-primary fw-bold mb-2">FAQs</p>
+    <h1 class="text-center fw-bold text-white texw" >Frequent Asked Questions</h1>
+    <p class="text-center text-white">Here are the most five frequent asked questions about renting a car from <strong>GoDrive.</strong> <br>
+      Feel Free to reach us in case if you have more queries.
+    </p>
+    <br>
+    <br>
+
+    <div class="accordion" id="accordionExample">
+
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What do I need to rent a car?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+            <li>A valid driver's license, usually held for at least one year. </li> 
+            <li>A credit card in the renter's name for the deposit and rental charges. </li> 
+            <li>Proof of identity, such as a passport or a second form of ID, depending on the rental company's policies. </li> 
+            <li>Minimum age requirement, often 21 or 25 years old, depending on the rental company and location. Additional fees may apply for drivers under 25.</li>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What is the fuel policy for rental cars?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+
+            <li> <strong>Full-to-Full:</strong> The car is provided with a full tank of fuel and must be returned with a full tank. This is generally the most cost-effective option.</li> <br>
+            <li> <strong>Pre-Purchase:</strong> You pay for a full tank of fuel at the time of rental 
+              and can return the car with any level of fuel. This option is convenient if you don't 
+              want to worry about refueling before returning the car, but may be more expensive.</li><br> 
+            <li> <strong>Full-to-Empty:</strong> You pay for a full tank of fuel at the time of rental and return the car empty. Any unused fuel will not be refunded.</li> 
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Can I rent a car without a credit card?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+            Most car rental companies require a credit card in the renter's name for security purposes. 
+            However, some companies may accept debit cards or offer cash rentals, though this often comes 
+            with additional requirements and restrictions, such as proof of return travel plans, a larger
+             deposit, or a credit check. It's best to check with the specific rental company for their policy
+              on non-credit card rentals.          
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Are there mileage limits on rental cars?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+            Mileage policies can vary. Some rental agreements offer unlimited mileage, allowing you to drive as much as you need without additional charges. Others may have a daily or total mileage limit, and exceeding this limit can result in additional fees. It's important to confirm the mileage policy when booking and to review your rental agreement to avoid unexpected charges.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            What should I do if the rental car breaks down or I have an accident?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+            For breakdowns, contact the rental company’s roadside assistance. For accidents, ensure safety, call emergency services if needed, notify the rental company, and follow their instructions for reporting and claims.
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+  
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+<!-- BreadCrumbs -->
+<div class="container-fluid p-3 bg-primary custom-container2">
+  <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+          <div class="reserve text-center">
+              <h1 class="text-primary fw-bold">YOU DESERVE THE BEST</h1>
+              <p class="text-white">Reserve Your Desired Car with us. For an unbelievable experience, you won't regret joining us.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+
+  
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Car Rental</h5>
+        <ul class="nav flex-column">
+          <p class="text-secondary">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">03440580996</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Godrive@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Company</h5>
+        <br>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Islamabad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Career</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mobile</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Working Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mon - Fri: 9:00AM - 9:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sat: 9:00AM - 19:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sun: Closed</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fw-bold text-primary">Subscribe to our Newsletter</h5>
+          <p class="text-secondary">Subscribe your Email address for latest news & updates.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-center text-primary">&copy; 2024 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+  
+
+
+<script src="js/validation.js"></script>
+<script src="js/home.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>

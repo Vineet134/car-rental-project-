@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../css/home.min.css">
+  <link rel="stylesheet" href="../css/login.min.css">
+
+  <link rel="stylesheet" href="../css/about.min.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- for the menu responsivness -->
+  <link rel="stylesheet" href="../css/small-menu.css">
+
+
+  <!-- for icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+  <!-- temp css -->
+
+  <!-- <link rel="stylesheet" href="../about.css"> -->
+
+
+</head>
+
+
+
+<body class="body">
+
+
+
+<!-- Header -->
+<div class="container-fluid custom-container2 breadcrumb-custom2">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom bg-shadow">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="../images/logo2.png" width="150" alt="Logo" aria-label="Bootstrap">
+      </a>
+    </div>
+
+    <!-- Nav Icon for Mobile View -->
+    <div class="nav-icon d-md-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="../index.html" class="nav-link px-2 link-primary text-white">Home</a></li>
+      <li><a href="about.html" class="nav-link px-2 text-white link-primary">About</a></li>
+      <li><a href="../html/cars.html" class="nav-link px-2 text-white link-primary">Vehicle Model</a></li>
+      <li><a href="../html/team.html" class="nav-link px-2 text-white link-primary">Our team</a></li>
+      <li><a href="../html/contact.html" class="nav-link px-2 text-white link-primary">Contact</a></li>
+    </ul>
+    
+    <div class="col-md-3 text-end small-menu">
+      <button type="button" class="btn btn-outline-primary text-white me-2" onclick="location.href='../index.html'">Home</button>
+      <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Login</button>
+    </div>
+  </header>
+</div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<!-- BreadCrumbs -->
+<div class="container-fluid custom-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom text-center bg-secondary custom-breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="text-decoration-none text-white fw-bold text-center" href="../index.html">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a class="fw-bold text-decoration-none text-white" href="cars.html">Vehicle Model
+        </a>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- HeroSection -->
+
+
+
+<!-- Types of CArs. -->
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="text-primary fw-bold">Our Collection</h1>
+        <p class="lead text-secondary">Explore and Reserve our new collection of the cars models.
+          Our clients have experienced our service and results, and they're eager to share their positive experiences with you.
+        </p>
+        <button type="button" class="btn btn-primary w-100" onclick="location.href='../html/checkout.html'">Check out</button>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"> <!-- Changed g-3 to g-4 for larger gap -->
+
+            <!-- Car 1 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/Corolla.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Corolla">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Toyota Corolla 2024 - Reliable and fuel-efficient sedan. Estimated Cost: PKR 3,000,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                              <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Car 3 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/Honda.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="City">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Honda City 2024 - Compact and stylish with great fuel economy. Estimated Cost: PKR 2,800,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car4.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Cultus">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Suzuki Cultus 2024 - Efficient and practical city car. Estimated Cost: PKR 2,200,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 5 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car5.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Swift">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Suzuki Swift 2024 - Modern hatchback with sporty features. Estimated Cost: PKR 2,500,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 6 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car6.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Alto">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Suzuki Alto 2024 - Compact and affordable hatchback. Estimated Cost: PKR 1,800,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 7 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car7.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Mehran">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Suzuki Mehran 2024 - Simple and economical car. Estimated Cost: PKR 1,500,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 8 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car8.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Fortuner">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Toyota Fortuner 2024 - Robust SUV for all terrains. Estimated Cost: PKR 8,000,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Car 2 -->
+                        <div class="col">
+                          <div class="card shadow-sm">
+                              <img src="../cars/Civic.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Civic">
+                              <div class="card-body text-center text-primary">
+                                  <p class="card-text">Honda Civic 2024 - Sporty design with advanced features. Estimated Cost: PKR 3,500,000</p>
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                                      <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+            <!-- Car 9 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../cars/car9.jpg" class="card-img-top img-fluid" style="height: 225px; object-fit: cover;" alt="Sportage">
+                    <div class="card-body text-center text-primary">
+                        <p class="card-text">Kia Sportage 2024 - Versatile and comfortable SUV. Estimated Cost: PKR 5,500,000</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../html/signup.html'">Buy</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Reserve</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<!-- BreadCrumbs -->
+<div class="container-fluid p-3 bg-primary custom-container">
+  <div class="reserve">
+    <h1 class="text-center text-primary fw-bold">YOU DESERVE THE BEST</h1>
+    <p class="text-center text-white">Reserve Your Desrired Car with us. For unbelievable experience you won't regret that joining with us.</p>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Car Rental</h5>
+        <ul class="nav flex-column">
+          <p class="text-secondary">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">03440580996</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Godrive@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Company</h5>
+        <br>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Islamabad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Career</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mobile</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Working Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mon - Fri: 9:00AM - 9:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sat: 9:00AM - 19:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sun: Closed</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fw-bold text-primary">Subscribe to our Newsletter</h5>
+          <p class="text-secondary">Subscribe your Email address for latest news & updates.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-center text-primary">&copy; 2024 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+
+
+  <script src="../js/home.js"></script>
+  <script src="../js/validation.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../css/home.min.css">
+  <link rel="stylesheet" href="../css/login.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script type="module" src="../js/signIn.js"></script>
+
+  <link rel="stylesheet" href="../sass/login.scss">
+  <!-- header responsivness -->
+  <link rel="stylesheet" href="../css/small-menu.css">
+  <script src="../js/home.js"></script>
+
+
+
+</head>
+
+
+<body class="body">
+
+
+
+  <!-- Header  -->
+  <div class="container-fluid custom-container2">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-shadow">
+
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="../images/logo2.png" width="150" alt="Logo" aria-label="Bootstrap">
+        </a>
+      </div>
+
+      
+      <!-- Nav Icon for Mobile View -->
+      <div class="nav-icon d-md-none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="../index.html" class="nav-link px-2 link-primary text-white">Home</a></li>
+        <li><a href="about.html" class="nav-link px-2 text-white link-primary">About</a></li>
+        <li><a href="cars.html" class="nav-link px-2 text-white link-primary">Vehicle Model</a></li>
+        <li><a href="team.html" class="nav-link px-2 text-white link-primary">Our team</a></li>
+        <li><a href="contact.html" class="nav-link px-2 text-white link-primary">Contact</a></li>
+      </ul>
+
+      
+            
+      <!-- <div class="col-md-3 text-end small-menu">
+        <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../home.html'">Home</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Log in</button>
+      </div> -->
+      
+      <div class="col-md-3 text-end small-menu">
+        <button type="button" class="btn btn-outline-primary text-white me-2" onclick="location.href='../index.html'">Home</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='../html/signup.html'">Signup</button>
+      </div>
+
+    </header>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- log in SEction -->
+  <div class="container">
+    <main class="form-signin w-100 m-auto" style="max-width: 400px;">
+      <form id="signinForm">
+        <h1 class="h3 mb-3 fw-bold text-center text-primary">Please sign in</h1>
+  
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control border border-primary" id="signinEmail" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+          <div id="signinEmailError" class="error"></div>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control border border-primary" id="signinPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+          <div id="signinPasswordError" class="error"></div>
+        </div>
+  
+        <div class="form-check text-start my-3">
+          <input class="form-check-input border border-primary" type="checkbox" value="remember-me" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit" id="signinSubmit">Sign in</button>
+        <p class="mt-5 mb-3 text-secondary text-center">&copy; GoDrive 2024</p>
+      </form>
+    </main>
+  </div>
+  
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+  
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Car Rental</h5>
+        <ul class="nav flex-column">
+          <p class="text-secondary">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">03440580996</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Godrive@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Company</h5>
+        <br>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Islamabad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Career</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mobile</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Working Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mon - Fri: 9:00AM - 9:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sat: 9:00AM - 19:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sun: Closed</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fw-bold text-primary">Subscribe to our Newsletter</h5>
+          <p class="text-secondary">Subscribe your Email address for latest news & updates.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-center text-primary">&copy; 2024 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+
+
+<script type="module" src="../js/authentication.js"></script>
+
+  
+</body>
+
+
+</html>

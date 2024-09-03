@@ -1,0 +1,47 @@
+.nav-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  height: 2px;
+  width: 25px;
+  background: #000;
+  margin: 4px 0;
+  margin-left: 20px;
+}
+
+/* Show nav-icon on mobile */
+@media (max-width: 768px) {
+  .nav-icon {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: $secondary;
+    width: 100%;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav-icon span{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media(max-width: 990px){
+  .small-menu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}

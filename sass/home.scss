@@ -1,0 +1,160 @@
+//custom colors;
+$background-clr: #FDF7ED;
+$shadow: #816538;
+$primary: #342103;
+$secondary: #816538;
+
+$text:$background-clr;
+
+// C6B9A8 the first one
+
+// ac9a80 another color
+
+.body{
+  // color: $primary;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+
+
+header{
+  background-color: $shadow;  
+  padding: 50px;
+  // border-radius: 10px;
+  opacity: .8;
+}
+
+.opa-clr{
+  background-color: $shadow;
+  opacity: .9;
+}
+
+
+// for the nav menu:
+// done here for the nav menu
+
+
+.form{
+  background-color: $shadow;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container.form, .headerr {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $secondary;
+  }
+}
+
+
+
+  /* Custom selection color for text */
+  ::selection {
+    background-color: $primary; /* Primary color background */
+  }
+
+  /* Custom styles for select elements */
+  select.form-select option:checked,
+  select.form-select option:hover {
+    background-color: $primary; /* Primary color background */
+  }
+
+
+
+// For the footer input button of the news letters
+/* Target the input element with its ID */
+#newsletter1 {
+  color: $background-clr;  
+}
+
+#newsletter1:focus {
+  color: $background-clr;  
+}
+
+#newsletter1::placeholder{
+  color: $background-clr;
+}
+
+// For frequenet asked questions.
+
+.faqs{
+  background-color: $secondary;
+  padding: 80px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .faqs {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $secondary;
+  }
+}
+.custom-container2{
+  background-image: url('../images/bread.png');
+  background-size: cover; /* Make sure the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.reserve{
+  padding: 200px;
+}
+   
+@media (max-width: 576px) {
+  .custom-container2 .reserve h1 {
+      display: flex;
+      font-weight: bolder;
+
+  }
+  .custom-container2 .reserve p {
+      display: none;
+  }
+}
+// for contact us sectoin
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: $primary;
+}
+.social-icons a:hover {
+  color: $primary;
+}
+// contact message error
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//import bootstrap file
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+

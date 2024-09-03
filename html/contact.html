@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../css/home.min.css">
+  <link rel="stylesheet" href="../css/login.min.css">
+
+  <link rel="stylesheet" href="../css/about.min.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- for the menu responsivness -->
+  <link rel="stylesheet" href="../css/small-menu.css">
+
+
+  <!-- for icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+
+  <!-- temp css -->
+
+  <!-- <link rel="stylesheet" href="../about.css"> -->
+
+  <style>
+
+  </style>
+
+</head>
+
+
+
+<body class="body">
+
+
+
+<!-- Header -->
+<div class="container-fluid custom-container2 breadcrumb-custom2">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom bg-shadow">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="../images/logo2.png" width="150" alt="Logo" aria-label="Bootstrap">
+      </a>
+    </div>
+
+    <!-- Nav Icon for Mobile View -->
+    <div class="nav-icon d-md-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="../index.html" class="nav-link px-2 link-primary text-white">Home</a></li>
+      <li><a href="about.html" class="nav-link px-2 text-white link-primary">About</a></li>
+      <li><a href="../html/cars.html" class="nav-link px-2 text-white link-primary">Vehicle Model</a></li>
+      <li><a href="../html/team.html" class="nav-link px-2 text-white link-primary">Our team</a></li>
+      <li><a href="../html/contact.html" class="nav-link px-2 text-white link-primary">Contact</a></li>
+    </ul>
+    
+    <div class="col-md-3 text-end small-menu">
+      <button type="button" class="btn btn-outline-primary text-white me-2" onclick="location.href='../index.html'">Home</button>
+      <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Login</button>
+    </div>
+  </header>
+</div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<!-- BreadCrumbs -->
+<div class="container-fluid custom-container">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-custom text-center bg-secondary custom-breadcrumb">
+      <li class="breadcrumb-item">
+        <a class="text-decoration-none text-white fw-bold text-center" href="../index.html">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a class="fw-bold text-decoration-none text-white" href="contact.html">Contact us</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- MainSection -->
+
+<main>
+  
+  <div class="custom-container2">
+      <div class="opa-clr p-5">
+      <p class="text-center fw-normal text-white opacity-75">Reach us</p>
+      <h1 class="text-center text-white fw-bold opacity-75">Contact us</h1>
+      </div>
+
+  </div>
+
+
+  <div class="container py-4">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row mt-4">
+      <div class="col-md-6 text-primary fw-bold">
+        <br>
+        
+        <div class="container py-4">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              <div id="nameError" class="error-message">Name must be at least 3 characters long.</div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              <div id="emailError" class="error-message">Please enter a valid email address.</div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+              <div id="messageError" class="error-message">Message cannot be empty.</div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mt-3 w-100">Send Message</button>
+          </form>
+        </div>
+      
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="p-5 bg-body-tertiary rounded-3">
+          <h2 class="text-center text-primary fw-bold">Find Us Here</h2>
+          <br>
+          <br>
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.9795875717484!2d77.60642517767525!3d12.974463009206938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167c4d722c73%3A0x32a49eb101436b6d!2sChurch%20St%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1720452182343!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <hr class="fw-bold text-primary">
+
+
+    <div class="contact-info text-center mt-4 ">
+      <h2 class="fw-bold text-primary">Contact Information</h2>
+      <p class="text-secondary"><span class="text-primary fw-bold">Address:</span> St5,church street Road ,Bengaluru</p>
+      <p class="text-secondary"><span class="text-primary fw-bold">Phone:</span> +91 344-0580996</p>
+      <p class="text-secondary"><span class="text-primary fw-bold">Email:</span> godrive1@gmail.com</p>
+      <br>
+      <br>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram/alsaqqaf_13.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/ahmed-alsakkaf" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<!-- anotherone -->
+
+<div class="container-fluid p-3 bg-primary custom-container2">
+  <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+          <div class="reserve text-center">
+              <h1 class="text-primary fw-bold">YOU DESERVE THE BEST</h1>
+              <p class="text-white">Reserve Your Desired Car with us. For an unbelievable experience, you won't regret joining us.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Car Rental</h5>
+        <ul class="nav flex-column">
+          <p class="text-secondary">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">03440580996</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Godrive@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Company</h5>
+        <br>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Islamabad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Career</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mobile</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Working Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mon - Fri: 9:00AM - 9:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sat: 9:00AM - 19:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sun: Closed</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fw-bold text-primary">Subscribe to our Newsletter</h5>
+          <p class="text-secondary">Subscribe your Email address for latest news & updates.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-center text-primary">&copy; 2024 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+  <script src="../js/home.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/contact.js"></script>
+
+</body>
+
+
+
+</html>
